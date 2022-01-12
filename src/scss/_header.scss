@@ -1,0 +1,105 @@
+.header {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 56px 0 0 0;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 62px;
+        @media (max-width: 767px) {
+            margin-right: 10px;
+            width: 90px;
+        }
+    }
+    &__image {
+        @media (max-width: 575px) {
+            width: 30px;
+        }
+    }
+
+    &__name {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3b1d8f;
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
+
+    &__description {
+        font-family: $reg;
+        font-size: 12px;
+        line-height: 20px;
+        color: #303030;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &__tel {
+        font-family: $bold;
+        font-size: 16px;
+        line-height: 18px;
+        color: #303030;
+        margin-right: 36px;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__entrance {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    &__mobile {
+        background: linear-gradient(326.06deg, #2641d1 11.53%, #3333a3 74.32%);
+        border-radius: 7px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        @media (min-width: 767px) {
+            display: none;
+        }
+    }
+    &__burger {
+        background: #dee6ef;
+        border-radius: 7px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 767px) {
+            display: none;
+        }
+    }
+    &__door {
+        display: flex;
+        align-items: center;
+    }
+}
+.main-button {
+    font-family: $bold;
+    color: #ffffff;
+    padding: 16px 32px;
+    background: #273895;
+    border-radius: 15px;
+}
+.main-logo {
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

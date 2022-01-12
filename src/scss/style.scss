@@ -1,0 +1,51 @@
+$reg: "Gotham Pro Regular";
+$bold: "Gotham Pro Bold";
+
+@font-face {
+    font-family: "Gotham Pro Regular";
+    src: url(../fonts/GothamPro.eot);
+    src: url(../fonts/GothamPro.eot) format("embedded-opentype"), url(../fonts/GothamPro.woff) format("woff"),
+        url(../fonts/GothamPro.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham Pro Bold";
+    src: url(../fonts/GothamPro-Bold.eot);
+    src: url(../fonts/GothamPro-Bold.eot) format("embedded-opentype"), url(../fonts/GothamPro-Bold.woff) format("woff"),
+        url(../fonts/GothamPro-Bold.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+.container {
+    max-width: 90%;
+    margin: 0px auto;
+    box-sizing: content-box;
+    padding: 0px 20px;
+}
+body {
+    background: #e5e5e5;
+}
+@import "header";
