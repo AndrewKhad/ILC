@@ -1,0 +1,54 @@
+.forecast {
+    background: #273895;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 144px;
+        @media (max-width: 1199px) {
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+        font-family: $bold;
+        font-size: calc(24px + 8 * (100vw / 1300));
+        line-height: 44px;
+        color: #ffffff;
+    }
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        text-align: center;
+        padding: 96px 0;
+        flex: 0 1 25%;
+        padding-right: 20px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__text {
+        &_color {
+            font-family: $bold;
+            font-size: calc(24px + 8 * (100vw / 1300));
+            line-height: 150%;
+            // ----------Цвет текста - градиент------------------------------------------------
+            background-image: linear-gradient(90deg, #4614e8, #bca7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            // --------Запасной цвет--------------------------------------------------------------
+            border-color: #7247ff;
+        }
+
+        &_black {
+            font-family: $reg;
+            font-size: calc(12px + 2 * (100vw / 1300));
+            line-height: 20px;
+            color: #ffffff;
+        }
+    }
+}

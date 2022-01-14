@@ -1,0 +1,24 @@
+.will {
+    background: url(../pictures/MaskGroup.png) no-repeat, url(../pictures/Rectangle.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 76px;
+    &__box {
+        padding-top: 88px;
+        padding-bottom: 205px;
+    }
+
+    &__tittle {
+        font-family: $bold;
+        font-size: 32px;
+        line-height: 44px;
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 150%;
+        color: #e9e9e9;
+    }
+}

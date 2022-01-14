@@ -1,11 +1,11 @@
-$reg: "Gotham Pro Regular";
+$reg: "Gotham Pro Medium";
 $bold: "Gotham Pro Bold";
 
 @font-face {
-    font-family: "Gotham Pro Regular";
-    src: url(../fonts/GothamPro.eot);
-    src: url(../fonts/GothamPro.eot) format("embedded-opentype"), url(../fonts/GothamPro.woff) format("woff"),
-        url(../fonts/GothamPro.ttf) format("truetype");
+    font-family: "Gotham Pro Medium";
+    src: url(../fonts/GothamPro-Medium.eot);
+    src: url(../fonts/GothamPro-Medium.eot) format("embedded-opentype"),
+        url(../fonts/GothamPro-Medium.woff) format("woff"), url(../fonts/GothamPro-Medium.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -36,16 +36,29 @@ a:visited {
 a:hover {
     text-decoration: none;
 }
-ul li {
-    list-style: none;
-}
+// ul li {
+//     list-style: none;
+// }
 .container {
-    max-width: 90%;
+    max-width: 1300px;
     margin: 0px auto;
     box-sizing: content-box;
+    padding: 0px 20px;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0px auto;
     padding: 0px 20px;
 }
 body {
     background: #e5e5e5;
 }
 @import "header";
+@import "major";
+@import "suggest";
+@import "will";
+@import "cards";
+@import "start";
+@import "forecast";
+@import "profile";
+@import "footer";

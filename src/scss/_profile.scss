@@ -1,0 +1,127 @@
+.profile {
+    &__box {
+        display: flex;
+        margin: 0 -48px;
+        margin-bottom: 144px;
+        @media (max-width: 991px) {
+            flex-direction: column;
+            flex-flow: column-reverse;
+        }
+    }
+
+    &__picture {
+        display: flex;
+        flex: 0 1 50%;
+        margin: 0 48px;
+        position: relative;
+        @media (max-width: 991px) {
+            justify-content: center;
+        }
+    }
+
+    &__photo {
+        border-radius: 20px;
+    }
+
+    &__text {
+        max-width: 360px;
+        max-height: 125px;
+        background: linear-gradient(331.41deg, #f0ebff -4.05%, #ffffff 34.42%);
+        box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.2);
+        border-radius: 11.9362px;
+        padding: 32px;
+        position: absolute;
+        right: -128px;
+        bottom: -27px;
+        @media (max-width: 991px) {
+            left: 47%;
+            top: 83%;
+        }
+        @media (max-width: 575px) {
+            left: 17%;
+            top: 83%;
+        }
+    }
+
+    &__letter {
+        font-family: $reg;
+        font-size: 32px;
+        line-height: 16px;
+        color: #303030;
+    }
+
+    &__say {
+        font-family: $reg;
+        font-size: 12px;
+        line-height: 16px;
+        color: #303030;
+    }
+
+    &__info {
+        margin: 0 48px;
+        align-self: flex-start;
+        @media (max-width: 991px) {
+            margin-bottom: 45px;
+        }
+    }
+}
+
+.questionnaire {
+    &__tittle {
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+        padding-top: 50px;
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+    }
+
+    &__name {
+        font-family: $bold;
+        font-size: 32px;
+        line-height: 44px;
+        color: #303030;
+        margin-bottom: 16px;
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+    }
+
+    &__stage {
+        font-family: $bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+        margin-bottom: 32px;
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        display: block;
+        padding-right: 50px;
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+        &_first {
+            margin-bottom: 16px;
+            & li {
+                margin-left: 16px;
+            }
+        }
+        &_second {
+            margin-bottom: 40px;
+        }
+    }
+    &__button {
+        display: block;
+        margin-top: 40px;
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.major {
+    &__area {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__box {
+        display: flex;
+    }
+
+    &__info {
+        margin-right: 50px;
+    }
+
+    &__navbar {
+        margin-bottom: 120px;
+    }
+
+    &__nav {
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: 0.03em;
+        color: #000000;
+        padding-right: 30px;
+        &:last-child {
+            padding-right: 0;
+        }
+        &:hover {
+            color: #273895;
+        }
+    }
+
+    &__tittle {
+        font-family: $bold;
+        font-size: 48px;
+        line-height: 115%;
+        color: #262626;
+        max-width: 733px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 150%;
+        color: #303030;
+        display: block;
+        max-width: 550px;
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        display: inline-block;
+    }
+
+    &__lite {
+        position: relative;
+        padding-top: 75px;
+    }
+    &__radius {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 145px;
+        height: 145px;
+        text-align: center;
+        color: #303030;
+        border-radius: 50%;
+        background: url(../pictures/Group.svg), #e5e5e5;
+        border-color: #f4f7fa;
+        position: absolute;
+        top: 0;
+        left: 225px;
+    }
+    &__spark {
+        position: absolute;
+        top: 90px;
+        left: 135px;
+    }
+    &__choice {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 730px;
+        max-height: 165px;
+        background: #f4f7fa;
+        box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+        border-radius: 10px;
+    }
+    &__item {
+        & img {
+            display: block;
+            margin-bottom: 7px;
+        }
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 26px;
+        color: #303030;
+        padding-right: 32px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        padding: 30px 48px;
+    }
+}
+.radius__bold {
+    font-family: $bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 5px;
+}
+
+.radius__lite {
+    font-family: $reg;
+    font-size: 12px;
+    line-height: 14px;
+    color: #303030;
+}

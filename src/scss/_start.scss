@@ -1,0 +1,91 @@
+.start {
+    background: url(../pictures/Vector3.svg) no-repeat;
+    background-position: center;
+    background-size: 63%;
+    margin-bottom: 144px;
+    &__tittle {
+        font-family: $bold;
+        font-size: 32px;
+        line-height: 44px;
+        color: #303030;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    &__box {
+        display: flex;
+        flex: 0 1 33.3333%;
+        margin: -8px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__column {
+        background: #ffffff;
+        box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+        border-radius: 20px;
+        align-self: start;
+        margin: 8px;
+        border: 1px solid #ffffff;
+        &:hover {
+            border: 1px solid #273895;
+        }
+    }
+
+    &__number {
+        font-family: $bold;
+        font-size: 14px;
+        line-height: 30px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #404040;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 36px;
+        color: #404040;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+    }
+
+    &__button {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+.column__box {
+    padding: 35px;
+    & img {
+        margin-bottom: 16px;
+    }
+    &__image {
+        padding-top: 73px;
+    }
+}
+.buttons {
+    text-align: center;
+    & a {
+        font-family: $bold;
+        color: #ffffff;
+        padding: 16px 32px;
+        background: #273895;
+        border-radius: 15px;
+    }
+}
