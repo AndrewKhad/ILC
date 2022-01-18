@@ -1,0 +1,198 @@
+.tariff {
+    &__name {
+        text-align: center;
+        margin-bottom: 42px;
+    }
+    &__period {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    &-name {
+        font-family: $bold;
+        font-size: 32px;
+        line-height: 44px;
+        color: #303030;
+        margin-bottom: 16px;
+    }
+    &-surname {
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 150%;
+        color: #404040;
+    }
+    &__voice {
+        display: flex;
+        justify-content: center;
+    }
+    &__link {
+        margin-right: 64px;
+        // &:hover {
+        //     margin-right: 16px;
+        // }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        & a {
+            font-family: $reg;
+            font-size: 20px;
+            line-height: 30px;
+            color: #273895;
+            border-bottom: 1px dashed #2741cf;
+            cursor: pointer;
+            // padding: 2px 32px;
+            display: inline;
+            &:hover {
+                color: #ffffff;
+                padding: 16px 32px;
+                background: #273895;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    &__box {
+    }
+
+    &__item {
+        background: #ffffff;
+        border-radius: 20px;
+        flex: 0 1 50%;
+        margin: 16px;
+        padding: 48px;
+    }
+
+    &__hod {
+        // margin: 48px;
+    }
+    &__group {
+        display: flex;
+        margin: 0 -16px;
+    }
+}
+
+.hod {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    &__tittle {
+        font-family: $bold;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #2741d0;
+        margin-bottom: 16px;
+    }
+
+    &__lite {
+        font-family: $reg;
+        font-size: 32px;
+        line-height: 44px;
+        font-size: 32px;
+        line-height: 44px;
+        color: #c9c9c9;
+        margin-bottom: 16px;
+    }
+
+    &__subtittle {
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 30px;
+        color: #737373;
+        margin-bottom: 16px;
+    }
+    &__price {
+        font-family: $bold;
+        font-size: 16px;
+        line-height: 30px;
+        color: #404040;
+        margin-bottom: 16px;
+    }
+
+    &__foryou {
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 30px;
+        color: #404040;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 40px;
+        color: #404040;
+        margin-bottom: 16px;
+        & li {
+            list-style: none;
+            background: url(../pictures/li.svg) no-repeat;
+            background-position: 0 18px;
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 40px;
+        color: #2741d0;
+        margin-bottom: 16px;
+        &::after {
+            content: url(../pictures/needle.svg);
+            padding-left: 15px;
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    &__button {
+        margin-bottom: 16px;
+        &:hover {
+            opacity: 0.7;
+        }
+        & a {
+            font-family: $reg;
+            font-size: 16px;
+            line-height: 18px;
+            color: #ffffff;
+            padding: 16px 32px;
+            background: #273895;
+            border-radius: 15px;
+        }
+    }
+    &__text {
+        // flex: 1 1 auto;
+    }
+    &__footer {
+    }
+}
+.group-column {
+    flex-direction: column;
+    &__item {
+        display: flex;
+    }
+}
+.main-item {
+    text-align: center;
+}
+.first {
+    &-list {
+        & li {
+        }
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-start;
+        text-align: left;
+    }
+    &-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

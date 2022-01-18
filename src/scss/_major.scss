@@ -1,7 +1,10 @@
 .major {
+    margin-bottom: 144px;
     &__area {
         display: flex;
         justify-content: flex-end;
+        margin-top: -100px;
+        z-index: 2;
     }
     &__box {
         display: flex;
@@ -56,6 +59,7 @@
     &__lite {
         position: relative;
         padding-top: 75px;
+        z-index: -2;
     }
     &__radius {
         display: flex;

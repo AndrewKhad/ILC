@@ -1,0 +1,46 @@
+.help {
+    margin-bottom: 176px;
+    &__tittle {
+        font-family: $bold;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #303030;
+        margin-bottom: 32px;
+    }
+
+    &__box {
+        display: flex;
+        margin: 0 -8px;
+    }
+
+    &__item {
+        flex: 0 1 33.3333%;
+        background: #ffffff;
+        border-radius: 10px;
+        margin: 0 8px;
+    }
+
+    &__card {
+        padding: 32px;
+    }
+
+    &__image {
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        font-family: $bold;
+        font-size: 16px;
+        line-height: 150%;
+        color: #303030;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 150%;
+        color: #404040;
+    }
+}
