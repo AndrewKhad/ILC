@@ -122,6 +122,16 @@
             background-position: 0 18px;
             padding-left: 20px;
             margin-bottom: 16px;
+            @media (max-width: 991px) {
+                background-position: 0 8px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        &__price,
+        &__foryou,
+        &__list {
+            line-height: 20px;
         }
     }
 
@@ -160,10 +170,15 @@
     flex-direction: column;
     &__item {
         display: flex;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 }
 .main-item {
     text-align: center;
+    margin: 0;
+    padding-left: 50px;
 }
 .first {
     &-list {

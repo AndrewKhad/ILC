@@ -16,6 +16,9 @@
         display: flex;
         flex: 0 1 33.3333%;
         margin: -8px;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__group {
@@ -32,6 +35,12 @@
         border: 1px solid #ffffff;
         &:hover {
             border: 1px solid #273895;
+        }
+        @media (max-width: 767px) {
+            padding: 0 50px;
+        }
+        @media (max-width: 575px) {
+            padding: 0 15px;
         }
     }
 
@@ -62,12 +71,25 @@
         font-size: 14px;
         line-height: 20px;
         color: #404040;
+        margin-bottom: 40px;
     }
 
     &__button {
         display: block;
         text-align: center;
         margin-top: 20px;
+        max-width: 250px;
+        @media (max-width: 767px) {
+            & a {
+                font-family: $reg;
+                font-size: 16px;
+                line-height: 18px;
+                color: #ffffff;
+                padding: 16px 32px;
+                background: #273895;
+                border-radius: 15px;
+            }
+        }
     }
 }
 .column__box {

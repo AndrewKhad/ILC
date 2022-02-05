@@ -2,6 +2,11 @@
     background: url(../pictures/MaskGroup.png) no-repeat, url(../pictures/Rectangle.png) no-repeat;
     background-size: cover;
     margin-bottom: 76px;
+    @media (max-width: 991px) {
+        background: url(../pictures/MaskGroup.png) no-repeat;
+        background-size: cover;
+        background-position: 60% 50%;
+    }
     &__box {
         padding-top: 88px;
         padding-bottom: 205px;
