@@ -103,6 +103,9 @@
         margin: 0 -9px;
         margin-top: -70px;
         z-index: 5;
+        @media (max-width: 1056px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__card {

@@ -6,6 +6,7 @@
         @media (max-width: 991px) {
             flex-direction: column;
             flex-flow: column-reverse;
+            text-align: center;
         }
     }
 
@@ -21,6 +22,11 @@
 
     &__photo {
         border-radius: 20px;
+    }
+    &__button {
+        @media (max-width: 767px) {
+            margin: 0 auto;
+        }
     }
 
     &__text {
@@ -62,20 +68,22 @@
         align-self: flex-start;
         @media (max-width: 991px) {
             margin-bottom: 45px;
+            max-width: 600px;
+            align-self: center;
         }
     }
 }
 
 .questionnaire {
+    @media (max-width: 991px) {
+        text-align: center;
+    }
     &__tittle {
         font-family: $reg;
         font-size: 14px;
         line-height: 20px;
         color: #404040;
         padding-top: 50px;
-        @media (max-width: 991px) {
-            text-align: center;
-        }
     }
 
     &__name {
@@ -109,12 +117,14 @@
         color: #404040;
         &_first {
             margin-bottom: 16px;
+            text-align: left;
             & li {
                 margin-left: 16px;
             }
         }
         &_second {
             margin-bottom: 40px;
+            text-align: left;
         }
     }
     &__button {

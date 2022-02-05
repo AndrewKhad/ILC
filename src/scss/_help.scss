@@ -12,6 +12,9 @@
     &__box {
         display: flex;
         margin: 0 -8px;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -19,6 +22,10 @@
         background: #ffffff;
         border-radius: 10px;
         margin: 0 8px;
+        @media (max-width: 767px) {
+            flex: 1 0 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__card {

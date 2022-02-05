@@ -50,19 +50,12 @@
         }
     }
 
-    &__box {
-    }
-
     &__item {
         background: #ffffff;
         border-radius: 20px;
         flex: 0 1 50%;
         margin: 16px;
         padding: 48px;
-    }
-
-    &__hod {
-        // margin: 48px;
     }
     &__group {
         display: flex;
@@ -162,11 +155,6 @@
             border-radius: 15px;
         }
     }
-    &__text {
-        // flex: 1 1 auto;
-    }
-    &__footer {
-    }
 }
 .group-column {
     flex-direction: column;
@@ -179,8 +167,6 @@
 }
 .first {
     &-list {
-        & li {
-        }
         // display: flex;
         // flex-direction: column;
         // justify-content: flex-start;

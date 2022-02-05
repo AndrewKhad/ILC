@@ -4,14 +4,28 @@
         display: flex;
         justify-content: space-between;
         padding-top: 40px;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__info {
         max-width: 406px;
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     &__logo {
         margin-bottom: 32px;
+        @media (max-width: 767px) {
+            display: block;
+            margin: 0 auto 32px;
+        }
     }
 
     &__title {
