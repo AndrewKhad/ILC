@@ -6,6 +6,7 @@
         padding-top: 40px;
         @media (max-width: 767px) {
             flex-wrap: wrap;
+            justify-content: center;
         }
     }
 
@@ -49,6 +50,9 @@
         position: absolute;
         top: -45;
         right: -100px;
+        @media (max-width: 575px) {
+            display: none;
+        }
     }
     &__medium-area {
         position: absolute;

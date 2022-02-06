@@ -53,6 +53,9 @@
         line-height: 18px;
         color: #303030;
         margin-right: 36px;
+        &:hover {
+            color: #273895;
+        }
         @media (max-width: 767px) {
             display: none;
         }
@@ -61,6 +64,13 @@
     &__entrance {
         font-size: 16px;
         line-height: 18px;
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
+        @media (max-width: 575px) {
+            display: none;
+        }
     }
     &__mobile {
         background: linear-gradient(326.06deg, #2641d1 11.53%, #3333a3 74.32%);
@@ -101,6 +111,9 @@
     &:hover {
         transform: scale(1.1);
         transition-duration: 200ms;
+    }
+    @media (max-width: 575px) {
+        display: none;
     }
 }
 .main-logo {

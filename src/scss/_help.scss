@@ -1,5 +1,8 @@
 .help {
     margin-bottom: 176px;
+    @media (max-width: 767px) {
+        margin-bottom: 72px;
+    }
     &__tittle {
         font-family: $bold;
         font-size: 16px;

@@ -32,6 +32,12 @@
         &:last-child {
             margin-right: 0;
         }
+        @media (max-width: 575px) {
+            margin-right: 20px;
+        }
+        @media (max-width: 446px) {
+            margin-right: 0;
+        }
         & a {
             font-family: $reg;
             font-size: 20px;
@@ -134,6 +140,14 @@
             line-height: 20px;
         }
     }
+    @media (max-width: 991px) {
+        &__tittle,
+        &__subtittle,
+        &__price,
+        &__foryou {
+            text-align: center;
+        }
+    }
 
     &__link {
         display: block;
@@ -147,6 +161,12 @@
             padding-left: 15px;
             position: relative;
             top: 3px;
+            @media (max-width: 850px) {
+                display: none;
+            }
+        }
+        @media (max-width: 767px) {
+            text-align: center;
         }
     }
 
@@ -163,6 +183,9 @@
             padding: 16px 32px;
             background: #273895;
             border-radius: 15px;
+        }
+        @media (max-width: 767px) {
+            text-align: center;
         }
     }
 }

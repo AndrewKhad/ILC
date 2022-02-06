@@ -3,6 +3,10 @@
     background-position: center;
     background-size: 63%;
     margin-bottom: 144px;
+    @media (max-width: 767px) {
+        margin-bottom: 70px;
+    }
+
     &__tittle {
         font-family: $bold;
         font-size: 32px;

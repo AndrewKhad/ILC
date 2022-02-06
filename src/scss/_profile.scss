@@ -13,7 +13,7 @@
     &__picture {
         display: flex;
         flex: 0 1 50%;
-        margin: 0 48px;
+        // margin: 0 48px;
         position: relative;
         @media (max-width: 991px) {
             justify-content: center;
@@ -22,6 +22,7 @@
 
     &__photo {
         border-radius: 20px;
+        overflow: hidden;
     }
     &__button {
         @media (max-width: 767px) {
@@ -43,9 +44,18 @@
             left: 47%;
             top: 83%;
         }
+        @media (max-width: 767px) {
+            left: 30%;
+            top: 80%;
+        }
         @media (max-width: 575px) {
-            left: 17%;
+            left: 70px;
             top: 83%;
+        }
+        @media (max-width: 446px) {
+            left: 0;
+            top: 83%;
+            max-width: px;
         }
     }
 
