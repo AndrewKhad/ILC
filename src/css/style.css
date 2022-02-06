@@ -55,6 +55,10 @@ body {
   background: #e5e5e5;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .header {
   margin-bottom: 55px;
 }
@@ -192,6 +196,7 @@ body {
 }
 
 .header__burger {
+  z-index: 10;
   background: #dee6ef;
   border-radius: 7px;
   width: 50px;
